@@ -138,6 +138,8 @@ img {
     margin-top: 0;
 }
 .me-img {
+    width: 450px;
+    height: 450px;
     border-radius: 50%;
 }
 
