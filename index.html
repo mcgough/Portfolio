@@ -22,7 +22,6 @@
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -32,10 +31,10 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#myNavBar">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+    <nav id='myNavBar' class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -51,7 +50,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#about" class='active'>About</a>
+                        <a href="#about">About</a>
                     </li>
                     <li>
                         <a href="#skills">Skills</a>
@@ -82,7 +81,7 @@
                 <div class="col-lg-12">
                     <div class="intro-message">
                         <h1 class='tlt'>Dan McGough</h1>
-                        <h3>Full-Stack Web Developer</h3>
+                        <h3>{Full-Stack Web Developer}</h3>
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li>
@@ -107,7 +106,7 @@
 
     <!-- Page Content -->
     <a  name="about"></a>
-    <div class="content-section-b">
+    <div id='about' class="content-section-b">
 
         <div class="container">
 
@@ -132,7 +131,7 @@ When I’m not coding, you’ll find me outdoors, climbing, fly fishing, or catc
     <!-- /.content-section-b -->
 
 	<a  name="skills"></a>
-    <div class="content-section-a">
+    <div id='skills' class="content-section-a">
 
         <div class="container">
             <div class="row">
@@ -149,9 +148,12 @@ When I’m not coding, you’ll find me outdoors, climbing, fly fishing, or catc
                         <li>CSS3</li>
                         <li>JavasScript</li>
                         <li>jQuery</li>
-                        <li>Node.js</li>
-                        <li>Express.js</li>
+                        <li>Angular</li>
+                        <li>Node</li>
+                        <li>Express</li>
+                        <li>Sails</li>
                         <li>Postgres</li>
+                        <li>MongoDB</li>
                         <li>Ruby on Rails</li>
                         <li>Test Driven Devleopment</li>
                         <li>Git</li>
@@ -166,7 +168,7 @@ When I’m not coding, you’ll find me outdoors, climbing, fly fishing, or catc
     </div>
     <!-- /.content-section-a -->
     <a name='project'></a>
-    <div class="content-section-b">
+    <div id='project' class="content-section-b">
 
         <div class="container">
 
@@ -174,7 +176,7 @@ When I’m not coding, you’ll find me outdoors, climbing, fly fishing, or catc
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading"><a href='dogparkfinder.herokuapp.com'>Top Dog</a></h2>
+                    <h2 class="section-heading"><a href='dogparkfinder.herokuapp.com'>DogParkFinder</a></h2>
                     <p class="lead">A dog park finder and checkin app. Locate new parks in your area or checkin and let others know where you're at!</p>
                     <small class='small-remove'>Built using Node and FourSquare API</small>
                 </div>
@@ -235,7 +237,7 @@ When I’m not coding, you’ll find me outdoors, climbing, fly fishing, or catc
     <!-- /.content-section-b -->
 
 	<a  name="contact"></a>
-    <div class="banner">
+    <div id='contact' class="banner">
 
         <div class="container">
 
