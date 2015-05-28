@@ -1,5 +1,3 @@
 $(function(){
- $('body').scrollspy({
-    target: '#myNavbar'
-  });
+  // $('.tlt').textillate({ in: { effect: 'flash' } });
 })
