@@ -11,3 +11,24 @@ a:hover {
 li {
   list-style-type: none;
 }
+.dropdown-toggle {
+  color: #777;
+  text-decoration: none;
+}
+.dropdown-toggle:hover {
+  color: #555
+}
+.dropdown:visited {
+  text-decoration: none;
+}
+.nav .open > a {
+  text-decoration: none;
+  color: #555;
+}
+.dropdown {
+ padding: 15px;
+}
+.dropdown-menu {
+  margin: 0;
+}
+
