@@ -34,4 +34,9 @@ li {
 .dropdown-menu {
   margin: 0;
 }
+@media(min-width: 768px) {
+  #skills {
+    width: 100% !important;
+  }
+}
 
