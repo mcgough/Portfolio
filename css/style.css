@@ -2,6 +2,9 @@ body {
   position: relative;
   height: 100%;
 }
+.skills-hr {
+  float: none;
+}
 a {
   color: black;
 }
