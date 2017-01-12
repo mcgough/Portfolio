@@ -1,3 +1,9 @@
 $(function(){
-  // $('.tlt').textillate({ in: { effect: 'flash' } });
+  
+  var $scroll;
+
+	$(window).scroll(function() {
+  	$scroll = document.body.scrollTop;
+		
+	})
 })

@@ -37,6 +37,7 @@ h6 {
     color: #f8f8f8;
     background: url(../img/sunsetlarge.jpg) no-repeat center center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .intro-message {
@@ -121,6 +122,7 @@ img {
     color: #f8f8f8;
     background: url(../img/sunset.JPG) no-repeat center center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .banner h2 {

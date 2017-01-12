@@ -24,6 +24,14 @@ li {
 .dropdown:visited {
   text-decoration: none;
 }
+.nav {
+  margin: auto;
+}
+.navbar-brand {
+  color: #777;
+  font-size: 4vh;
+  font-weight: 300;
+}
 .nav .open > a {
   text-decoration: none;
   color: #555;
@@ -34,9 +42,143 @@ li {
 .dropdown-menu {
   margin: 0;
 }
+.navbar-default .navbar-nav>li>a {
+  font-size: 3vh;
+  color: #777;
+  font-weight: 500;
+}
+.intro-header {
+  height: 95vh;
+  display: flex;
+  align-items: center;
+}
+.intro-message h1 {
+  font-size: 8vh;  
+}
+.intro-message h3 {
+  font-size: 4vh;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headshot-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+.headshot {
+  width: 50vh;
+  height: 50vh;
+  color: #f8f8f8;
+  background: url(../img/menew.jpg) no-repeat center center;
+  background-size: cover;
+  border-radius: 50%
+}
+.section-heading a {
+  cursor: pointer;
+}
+.section-heading.skills {
+  margin-bottom: 0;
+}
+.tech-container {
+  display: flex;
+  justify-content: space-between;
+}
+.tech-title h3 {
+  font-weight: 300;
+}
+.tech-list {
+  margin: 0;
+  padding: 0;
+}
+.tech-list li {
+  font-weight: 500;
+}
+.section-heading {
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.section-heading-spacer {
+  border-top: 1px solid #ccc;
+}
+.lead {
+  font-size: 2.25vh;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+.project {
+  border: 2px solid transparent;
+  border-radius: 10px;
+  /*opacity: .75;*/
+  transition: all .5s;
+}
+.project:hover {
+  /*border-color: #337ab7;*/
+  /*opacity: 1;*/
+}
+.banner {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+.banner .row {
+  flex-direction: column;
+}
+.banner h2 {
+  font-size: 8vh;
+  margin-bottom: 5%;
+}
+footer {
+  padding: 20px 0;
+}
+@media (min-width: 1200px) {
+  .col-lg-offset-1, .col-lg-offset-2, .col-lg-5 {
+    width: 50%;
+  }
+  .col-lg-offset-1, .col-lg-offset-2 {
+    margin-left: 0;
+  }
+  .col-lg-6 {
+    width:  auto;
+  }
+  .col-lg-8 {
+    max-width: 90%;
+  }
+}
+
 @media(min-width: 768px) {
   #skills {
     width: 100% !important;
+  }
+}
+@media screen and (max-width: 668px) {
+  .row {
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .content-section-a, .content-section-b {
+    padding: 25px 0 45px 0;
+  }
+  .headshot-wrapper {
+    width: 100%;
+  }
+  .tech-container {
+    flex-direction: column;
+  }
+  .project {
+    margin-top: 7%;
+    opacity: 1;
+  }
+  .banner-social-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
