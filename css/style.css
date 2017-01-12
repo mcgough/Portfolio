@@ -238,5 +238,8 @@ footer {
     -o-align-items: center;
     align-items: center;
   }
+  .intro-header, .banner {
+    background-attachment: scroll;
+  }
 }
 
