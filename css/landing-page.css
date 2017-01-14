@@ -35,9 +35,6 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/sunsetlarge.jpg) no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 .intro-message {

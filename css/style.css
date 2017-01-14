@@ -43,28 +43,64 @@ li {
   margin: 0;
 }
 .navbar-default .navbar-nav>li>a {
-  font-size: 3vh;
+  font-size: 1.2em;
   color: #777;
   font-weight: 500;
 }
+.content-overlay {
+  position: absolute; 
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,.5);
+}
+.clear {
+  background: rgba(0,0,0,0);
+}
 .intro-header {
   height: 95vh;
+  
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
+  
   -webkit-align-items: center;
   -moz-align-items: center;
   -ms-align-items: center;
   -o-align-items: center;
   align-items: center;
+
+  background: url(../img/sunsetlarge.jpg) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .intro-message h1 {
   font-size: 8vh;  
 }
 .intro-message h3 {
+  opacity: 1;
   font-size: 4vh;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;  
 }
+.intro-message h1, .intro-divider, .intro-social-buttons {
+  opacity: 1;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+}
+.intro-message h1.opaque, .opaque, #contact .row.opaque {
+  opacity: 0
+}
+.intro-message h3.opaque {
+  opacity: 0;
+}
+
 .row {
   display: -webkit-box;
   display: -moz-box;
@@ -104,7 +140,6 @@ li {
   color: #f8f8f8;
   background: url(../img/menew.jpg) no-repeat center center;
   background-size: cover;
-  border-radius: 50%
 }
 .section-heading a {
   cursor: pointer;
@@ -145,9 +180,12 @@ li {
   font-weight: 100;
   letter-spacing: 1px;
 }
+#skills .col-lg-8 {
+  width:  75%;
+}
 .project {
   border: 2px solid transparent;
-  border-radius: 10px;
+  border-radius: 0;
   /*opacity: .75;*/
   transition: all .5s;
 }
@@ -176,6 +214,13 @@ li {
 }
 footer {
   padding: 20px 0;
+}
+#contact .row {
+  opacity: 1;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;  
 }
 @media (min-width: 1200px) {
   .col-lg-offset-1, .col-lg-offset-2, .col-lg-5 {
