@@ -40,15 +40,15 @@ li {
   min-height: 70px;
 }
 #myNavBar {
-  opacity: .98;
+  opacity: .97;
   
-  -webkit-transition: opacity .5s ease-in-out;
-  -moz-transition: opacity .5s ease-in-out;
-  -o-transition: opacity .5s ease-in-out;
-  transition: opacity .5s ease-in-out;  
+  -webkit-transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;  
 }
 #myNavBar.scrolling {
-  opacity: .5;
+  opacity: .25;
 }
 .nav {
   margin: auto;
@@ -331,9 +331,37 @@ footer {
   }
   .navbar-toggle .icon-bar {
     width: 100%;
+
+    -webkit-transition: all .35s ease-in-out;
+    -moz-transition: all .35s ease-in-out;
+    -o-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;  
   }
   .navbar-toggle .icon-bar+.icon-bar {
     margin-top: 7px;
+  }
+  .navbar-toggle.open .icon-bar {
+    margin: 0;
+  }
+  .navbar-toggle.open .top {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .navbar-toggle.open .middle {
+    display: none;
+  }
+  .navbar-toggle.open .bottom {
+    position: relative;
+    bottom: 2px;
+
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
   }
   .intro-header {
     height: 85vh;

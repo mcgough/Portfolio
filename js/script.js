@@ -24,6 +24,12 @@ function closeNavbar () {
 	})
 }
 
+function openNav () {
+	$('.navbar-toggle').on('click', function() {
+		$('.navbar-toggle').toggleClass('open');
+	})
+}
+
 var opaque = 'opaque';
 		
 $(function() {
@@ -48,6 +54,7 @@ $(function() {
 
 	})
 
+	openNav();
 	closeNavbar();
 
 })
