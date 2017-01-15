@@ -47,6 +47,10 @@ li {
   font-size: 4vh;
   font-weight: 300;
 }
+.navbar-nav>li>a {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 .nav .open > a {
   text-decoration: none;
   color: #555;
@@ -55,7 +59,8 @@ li {
   margin-top: 20px;
 }
 .dropdown {
- padding: 15px;
+ padding: 25px;
+ padding-right: 0;
 }
 .dropdown-menu {
   margin: 0;
@@ -233,6 +238,9 @@ li {
 footer {
   display: none;
 }
+#contact.banner {
+  height: 110vh;
+}
 #contact .row {
   opacity: 1;
   -webkit-transition: opacity .5s ease-in-out;
@@ -265,7 +273,7 @@ footer {
     min-height: 60px;
   }
   .intro-header {
-    height: 87vh;
+    height: 85vh;
   }
   .intro-divider {
     width: 20%;
@@ -321,9 +329,6 @@ footer {
   }
   .intro-header, .banner {
     background-attachment: scroll;
-  }
-  #contact.banner {
-    height: 110vh;
   }
 }
 

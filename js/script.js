@@ -18,6 +18,12 @@ function fadeOut () {
 	$('.intro-message h3').removeClass(opaque);
 }
 
+function closeNavbar () {
+	$('.content-link').on('click', function() {
+		$('.navbar-collapse').removeClass('in');
+	})
+}
+
 var opaque = 'opaque';
 		
 $(function(){
@@ -32,9 +38,11 @@ $(function(){
 		$footerDistance = $footerContact.offset().top - $scrollTop;
 
 		$scrollTop > 50 ? fadeIn() : fadeOut()
-		$footerDistance > 500 ? $footerContact.addClass(opaque) : $footerContact.removeClass(opaque);
+		$footerDistance > 300 ? $footerContact.addClass(opaque) : $footerContact.removeClass(opaque);
 
 	})
+
+	closeNavbar();
 
 })
 		
