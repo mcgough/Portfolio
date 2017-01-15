@@ -39,6 +39,9 @@ li {
 .container .topnav, .navbar {
   min-height: 70px;
 }
+#myNavBar {
+  opacity: .95;
+}
 .nav {
   margin: auto;
 }
@@ -123,7 +126,29 @@ li {
 .intro-message h3.opaque {
   opacity: 0;
 }
+.intro-divider  {
+  width: 10%;
+}
+.chevron-container {
+  position: relative;
+}
+.chevron {
+  position: absolute;
+  bottom: 20px;
+  border-style: solid;
+  border-width: 3px 3px 0 0;
+  border-color: #ccc;
+  content: '';
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
 
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+}
 .row {
   display: -webkit-box;
   display: -moz-box;
@@ -272,11 +297,41 @@ footer {
   .navbar {
     min-height: 60px;
   }
+  .navbar-brand.topnav {
+    display: none;
+  }
+  .container>.navbar-collapse {
+    margin-right: -30px;
+    margin-left: -30px;
+  }
+  .container>.navbar-header {
+    width: 20%;
+    margin: auto;
+    border-right: 1px solid #e7e7e7;
+    border-left: 1px solid #e7e7e7;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30px;
+    padding-top: 0;
+  }
+  .navbar-default .navbar-toggle:hover {
+    background-color: inherit;
+  }
+  .navbar-toggle .icon-bar {
+    width: 100%;
+  }
   .intro-header {
     height: 85vh;
   }
   .intro-divider {
     width: 20%;
+  }
+  .chevron {
+    display: none;
   }
   .row {
     -webkit-flex-wrap: wrap;
@@ -289,6 +344,11 @@ footer {
     padding: 25px 0 45px 0;
   }
   .headshot-wrapper {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .headshot {
     width: 100%;
   }
   .section-heading-spacer {
