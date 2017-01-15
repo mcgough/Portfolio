@@ -21,6 +21,7 @@ function fadeOut () {
 function closeNavbar () {
 	$('.content-link').on('click', function() {
 		$('.navbar-collapse').removeClass('in');
+		$('.navbar-toggle').removeClass('open')
 	})
 }
 
