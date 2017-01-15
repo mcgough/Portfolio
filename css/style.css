@@ -40,7 +40,15 @@ li {
   min-height: 70px;
 }
 #myNavBar {
-  opacity: .95;
+  opacity: .98;
+  
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;  
+}
+#myNavBar.scrolling {
+  opacity: .5;
 }
 .nav {
   margin: auto;
@@ -323,6 +331,9 @@ footer {
   }
   .navbar-toggle .icon-bar {
     width: 100%;
+  }
+  .navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 7px;
   }
   .intro-header {
     height: 85vh;

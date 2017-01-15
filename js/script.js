@@ -26,11 +26,12 @@ function closeNavbar () {
 
 var opaque = 'opaque';
 		
-$(function(){
+$(function() {
 
 	var $scrollTop,
 		  $footerContact = $('#contact .row'),
-		  $footerDistance;
+		  $footerDistance,
+		  $navBar = $('#myNavBar');
 	
 	$(window).scroll(function() {
 		
@@ -39,6 +40,11 @@ $(function(){
 
 		$scrollTop > 50 ? fadeIn() : fadeOut()
 		$footerDistance > 300 ? $footerContact.addClass(opaque) : $footerContact.removeClass(opaque);
+
+		$navBar.addClass('scrolling');
+		setTimeout(function () {
+			$navBar.removeClass('scrolling');
+		},1000);
 
 	})
 
