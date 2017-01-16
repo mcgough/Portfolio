@@ -412,8 +412,8 @@ footer {
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
-  .intro-header {
-    height: 85vh;
+  .intro-message {
+    padding-top: 5%;
   }
   .intro-divider {
     width: 20%;
