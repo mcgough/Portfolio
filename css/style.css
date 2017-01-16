@@ -412,6 +412,9 @@ footer {
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
+  .intro-header {
+    height: 95vh;
+  }
   .intro-divider {
     width: 20%;
   }
