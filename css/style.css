@@ -413,7 +413,8 @@ footer {
     transform: rotate(-45deg);
   }
   .intro-message {
-    padding-top: 5%;
+    padding-top: 0;
+    padding-bottom: 40%;
   }
   .intro-divider {
     width: 20%;
