@@ -369,6 +369,7 @@ footer {
     border-left: 1px solid #e7e7e7;
     background: #e7e7e7;
     opacity: .5;
+    -webkit-tap-highlight-color: rgba(0,0,0,.5);
   }
   .navbar-default .navbar-toggle {
     border-color: transparent;
