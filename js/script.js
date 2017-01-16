@@ -51,9 +51,9 @@ $(function() {
 		
 		$scrollTop = document.body.scrollTop;
 		$footerDistance = $footerContact.offset().top - $scrollTop;
-
+		console.log($footerDistance);
 		$scrollTop > 50 ? fadeIn() : fadeOut()
-		$footerDistance > 300 ? $footerContact.addClass(opaque) : $footerContact.removeClass(opaque);
+		$footerDistance > 450 ? $footerContact.addClass(opaque) : $footerContact.removeClass(opaque);
 
 		$navBar.addClass('scrolling');
 		setTimeout(function () {
