@@ -444,6 +444,9 @@ footer {
   .section-heading-spacer {
     display: none;
   }
+  #skills .col-lg-8 {
+    width: 100%;
+  }
   #skills h2 {
     font-size: 25px;
   }
