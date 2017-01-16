@@ -1,7 +1,7 @@
-function scrollEffect (dist) {
+function scrollEffect (dist,time) {
 	return $("html, body").animate({ 
 			scrollTop: dist 
-		});
+		},time);
 }
 
 function fadeIn () {
@@ -31,6 +31,13 @@ function openNav () {
 	})
 }
 
+function chevronClick () {
+	$('.chevron').on('click', function() {
+		var dist = $('#about').offset().top;
+		scrollEffect(dist,1000);
+	})
+}
+
 var opaque = 'opaque';
 		
 $(function() {
@@ -54,6 +61,8 @@ $(function() {
 		},1000);
 
 	})
+
+	chevronClick();
 
 	openNav();
 	closeNavbar();
