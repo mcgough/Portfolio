@@ -442,6 +442,7 @@ footer {
     height: 60px;
     margin: auto;
     padding-top: 10px;
+    border-radius: 0;
   }
   .navbar-default .navbar-toggle:hover {
     background-color: inherit;
