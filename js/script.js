@@ -38,6 +38,37 @@ function chevronClick () {
 	})
 }
 
+function storageCheck () {
+	if (window.localStorage) return true;
+}
+
+function welcomeTimer () {
+	$welcome = $('.welcome');
+	setTimeout(function() {
+		$welcome.addClass('active');
+	},500);
+	setTimeout(function() {
+		$welcome.removeClass('active');
+	},5500);
+}
+
+function welcome () {
+	var firstTimer = "Welcome, thank you for taking a look at my Portfolio. I'd love to hear what you think!",
+			powerUser = "Welcome again, I see you're back for another look. I hope we'll be in touch soon!"
+	if (storageCheck()) {
+		var visited = window.localStorage.getItem('visited'),
+				$copy = $('.welcome-container .copy');
+		if (visited) {
+			$copy.text(powerUser);
+			welcomeTimer();
+		} else {
+			window.localStorage.setItem('visited',true);
+			$copy.text(firstTimer);
+			welcomeTimer();
+		}
+	}
+}
+
 var opaque = 'opaque';
 		
 $(function() {
@@ -51,7 +82,7 @@ $(function() {
 		
 		$scrollTop = document.body.scrollTop;
 		$footerDistance = $footerContact.offset().top - $scrollTop;
-		console.log($footerDistance);
+
 		$scrollTop > 50 ? fadeIn() : fadeOut()
 		$footerDistance > 450 ? $footerContact.addClass(opaque) : $footerContact.removeClass(opaque);
 
@@ -62,8 +93,8 @@ $(function() {
 
 	})
 
+	welcome();
 	chevronClick();
-
 	openNav();
 	closeNavbar();
 
