@@ -49,7 +49,7 @@ function welcomeTimer () {
 	},500);
 	setTimeout(function() {
 		$welcome.removeClass('active');
-	},5500);
+	},4500);
 }
 
 function welcome () {
