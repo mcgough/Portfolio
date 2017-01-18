@@ -62,7 +62,7 @@ function welcome () {
 		powerUser: [
 			"Welcome again, I see you're back for another look. I hope we'll connect soon!",
 			"Back again? I'd love to hear what you think. Let's connect!",
-			"Stopped by to take another, huh? Let's connect!"
+			"Stopped by to take another look, huh? Let's connect!"
 		]
 	}
 	if (storageCheck()) {
