@@ -52,18 +52,28 @@ function welcomeTimer () {
 	},4500);
 }
 
+function randomDraw (options) {
+	return Math.floor(Math.random() * options);
+}
+
 function welcome () {
-	var firstTimer = "Welcome, thank you for taking a look at my Portfolio. I'd love to hear what you think!",
-			powerUser = "Welcome again, I see you're back for another look. I hope we'll be in touch soon!"
+	var dialog = {
+		firstTimer: "Welcome, I see it's your first time looking at my Portfolio. I'd love to hear what you think!",
+		powerUser: [
+			"Welcome again, I see you're back for another look. I hope we'll connect soon!",
+			"Back again? I'd love to hear what you think. Let's connect!",
+			"Stopped by to take another, huh? Let's connect!"
+		]
+	}
 	if (storageCheck()) {
 		var visited = window.localStorage.getItem('visited'),
 				$copy = $('.welcome-container .copy');
 		if (visited) {
-			$copy.text(powerUser);
+			$copy.text(dialog.powerUser[randomDraw(dialog.powerUser.length)]);
 			welcomeTimer();
 		} else {
 			window.localStorage.setItem('visited',true);
-			$copy.text(firstTimer);
+			$copy.text(dialog.firstTimer);
 			welcomeTimer();
 		}
 	}

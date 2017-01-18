@@ -296,7 +296,8 @@ li {
   margin-bottom: 0;
 }
 .section-heading a {
-  font-weight: 300;
+  font-weight: 100;
+  font-size: 26px;
 }
 .tech-container {
   display: -webkit-box;
