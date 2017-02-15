@@ -4,18 +4,13 @@ function scrollEffect (dist,time) {
 		},time);
 }
 
-function fadeIn () {
-	$('.intro-message h1').addClass(opaque);
-	$('.intro-divider').addClass(opaque);
-	$('.intro-social-buttons').addClass(opaque);
-	$('.intro-message h3').addClass(opaque);
+function introFade(scroll) {
+	document.querySelector('.intro-message').style.opacity = 1 - (scroll * 0.0075);
 }
 
-function fadeOut () {
-	$('.intro-message h1').removeClass(opaque);
-	$('.intro-divider').removeClass(opaque);
-	$('.intro-social-buttons').removeClass(opaque);
-	$('.intro-message h3').removeClass(opaque);
+function footerFade(scroll) {
+	var diff = scroll * -.0075 + .5;
+	document.querySelector('#contact .container .row').style.opacity = diff;
 }
 
 function closeNavbar () {
@@ -84,24 +79,26 @@ var opaque = 'opaque';
 $(function() {
 
 	var $scrollTop,
-		  $footerContact = $('#contact .row'),
+		  $footerContact = $('#contact'),
 		  $footerDistance,
 		  $navBar = $('#myNavBar');
 	
 	$(window).scroll(function() {
-		
 		$scrollTop = document.body.scrollTop;
 		$footerDistance = $footerContact.offset().top - $scrollTop;
-
-		$scrollTop > 50 ? fadeIn() : fadeOut()
-		$footerDistance > 450 ? $footerContact.addClass(opaque) : $footerContact.removeClass(opaque);
-
+		
+		if ($scrollTop <= 300) {
+			introFade($scrollTop);
+		}
+		
+		footerFade($footerDistance);
 		$navBar.addClass('scrolling');
 		setTimeout(function () {
 			$navBar.removeClass('scrolling');
 		},1000);
-
 	})
+			
+
 
 	welcome();
 	chevronClick();
