@@ -312,9 +312,9 @@ li {
   -o-transition: all .5s;
   transition: all .5s;
 }
-.headshot:hover {
-  background-size: 105% 105%;
-}
+// .headshot:hover {
+//   background-size: 105% 105%;
+// }
 .headshot:hover > .img-overlay {
   background: rgba(0,0,0,0);
 }
