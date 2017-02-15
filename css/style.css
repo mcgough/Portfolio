@@ -231,8 +231,11 @@ li {
 }
 .chevron-container {
   position: absolute;
-  bottom: 80px;
   width: 100%;
+  -webkit-animation: arrow 1.5s infinite ease-in-out;
+  -moz-animation: arrow 1.5s infinite ease-in-out;
+  -o-animation: arrow 1.5s infinite ease-in-out;
+  animation: arrow 1.5s infinite ease-in-out;
 }
 .chevron {
   border-style: solid;
@@ -283,11 +286,37 @@ li {
   width: 50%;
 }
 .headshot {
+  position: relative;
   width: 50vh;
   height: 50vh;
   color: #f8f8f8;
   background: url(../img/menew.jpg) no-repeat center center;
-  background-size: cover;
+  background-size: 100% 100%;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: rgba(0,0,0,.2);
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+.headshot:hover {
+  background-size: 105% 105%;
+}
+.headshot:hover > .img-overlay {
+  background: rgba(0,0,0,0);
 }
 .section-heading a {
   cursor: pointer;
@@ -394,7 +423,53 @@ footer {
     max-width: 90%;
   }
 }
+//Animations
+@-webkit-keyframes arrow {
+  0% {
+    bottom: 80px;
+  }
+  50% {
+    bottom: 100px;
+  }
+  100% {
+    bottom: 80px;
+  }
+}
+@-moz-keyframes arrow {
+  0% {
+    bottom: 80px;
+  }
+  50% {
+    bottom: 100px;
+  }
+  100% {
+    bottom: 80px;
+  }
+}
+@-o-keyframes arrow {
+  0% {
+    bottom: 80px;
+  }
+  50% {
+    bottom: 100px;
+  }
+  100% {
+    bottom: 80px;
+  }
+}
+@keyframes arrow {
+  0% {
+    bottom: 80px;
+  }
+  50% {
+    bottom: 100px;
+  }
+  100% {
+    bottom: 80px;
+  }
+}
 
+//Breakpoints
 @media(min-width: 768px) {
   #skills {
     width: 100% !important;

@@ -84,6 +84,7 @@ $(function() {
 		  $navBar = $('#myNavBar');
 	
 	$(window).scroll(function() {
+
 		$scrollTop = document.body.scrollTop;
 		$footerDistance = $footerContact.offset().top - $scrollTop;
 		
@@ -96,14 +97,15 @@ $(function() {
 		setTimeout(function () {
 			$navBar.removeClass('scrolling');
 		},1000);
+		
 	})
 			
-
-
 	welcome();
 	chevronClick();
 	openNav();
 	closeNavbar();
 
 })
+
+
 		
