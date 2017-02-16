@@ -291,7 +291,7 @@ li {
   height: 50vh;
   color: #f8f8f8;
   background: url(../img/menew.jpg) no-repeat center center;
-  background-size: 100% 100%;
+  background-size: cover;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
   -ms-transition: all .5s;
