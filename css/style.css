@@ -188,7 +188,7 @@ small {
 small:before {
   content: "* ";
   position: relative;
-  top: 3px;
+  top: 3.5px;
 }
 .intro-header {
   height: 100vh;
