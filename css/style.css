@@ -181,6 +181,15 @@ li {
 .clear {
   background: rgba(0,0,0,0);
 }
+small {
+  font-weight: 100;
+  letter-spacing: .5px;
+}
+small:before {
+  content: "* ";
+  position: relative;
+  top: 3px;
+}
 .intro-header {
   height: 100vh;
   
@@ -367,6 +376,7 @@ li {
   width:  80%;
 }
 .project {
+  cursor: pointer;
   border: 2px solid transparent;
   border-radius: 0;
   /*opacity: .75;*/
