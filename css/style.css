@@ -270,6 +270,7 @@ li {
   -o-justify-content: center;
 }
 .headshot-wrapper {
+  overflow: hidden;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
