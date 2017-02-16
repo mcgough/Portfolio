@@ -71,6 +71,7 @@ li {
 .dropdown:visited {
   text-decoration: none;
 }
+
 .container .topnav {
   display: -webkit-box;
   display: -moz-box;
@@ -331,6 +332,10 @@ small:before {
 }
 .section-heading a {
   cursor: pointer;
+  -webkit-transition: all .35s ease-in-out;
+  -moz-transition: all .35s ease-in-out;
+  -o-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;   
 }
 .section-heading.skills {
   margin-bottom: 0;
@@ -421,6 +426,71 @@ footer {
   -o-transition: opacity .5s ease-in-out;
   transition: opacity .5s ease-in-out;  
 }
+// .content-section-b a {
+//   color: #00263e;
+// }
+.content-section-b a i {
+  color: #00263E;
+}
+.content-section-a {
+  background: #00263e;
+  color: #fff;
+}
+.content-section-a h2.section-heading a {
+  color: #fff;
+}
+.content-section-a i {
+  color: #fff;
+}
+.section-heading:hover > a {
+  color: #aa9666 !important;
+}
+.section-heading:hover > a {
+  color: #aa9666 !important;
+}
+.btn-default {
+  background: transparent;
+  border-color: #fff;
+  color: #fff;
+  border-radius: 0;
+  -webkit-transition: all .35s ease-in-out;
+  -moz-transition: all .35s ease-in-out;
+  -o-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;  
+}
+.btn-default > i {
+  -webkit-transition: all .35s ease-in-out;
+  -moz-transition: all .35s ease-in-out;
+  -o-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;    
+}
+.btn-default:hover {
+  background: #fff;
+  color: #00263e;
+}
+.btn-default:hover > i{
+  color: #00263e;
+}
+.navbar-default {
+  background: #00263e;
+  border-top-width: 0;
+  color: #fff;
+}
+.navbar-default .navbar-brand,.fa-fw,.navbar-default .navbar-nav>li>a {
+  cursor: pointer;
+  color: #e7e7e7;
+  -webkit-transition: all .35s ease-in-out;
+  -moz-transition: all .35s ease-in-out;
+  -o-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;   
+}
+.navbar-default .navbar-brand:hover,.fa-fw:hover,.navbar-default .navbar-nav>li>a:hover {
+  color: #aa9666;
+}
+.navbar-default .navbar-nav>.active>a {
+  background: #aa9666;
+  color: #e7e7e7;
+}
 @media (min-width: 1200px) {
   .col-lg-offset-1, .col-lg-offset-2, .col-lg-5 {
     width: 50%;
@@ -491,7 +561,9 @@ footer {
   .name-contact ul {
     display: none;
   }
-  
+  .navbar>.container .navbar-brand {
+    font-size: 1.8em;
+  }
 }
 @media screen and (max-width: 668px) {
   .welcome-container .copy {
