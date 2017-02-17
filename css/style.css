@@ -429,15 +429,15 @@ small:before {
   color: #00263e;
   letter-spacing: 1px;
   position: relative;
-  bottom: -20%;
+  bottom: -10%;
   -webkit-opacity: 0;
   -moz-opacity: 0;
   -o-opacity: 0;  
   opacity: 0;  
-  -webkit-transition: all .35s ease-in-out;
-  -moz-transition: all .35s ease-in-out;
-  -o-transition: all .35s ease-in-out;
-  transition: all .35s ease-in-out;
+  -webkit-transition: all .55s ease-in-out;
+  -moz-transition: all .55s ease-in-out;
+  -o-transition: all .55s ease-in-out;
+  transition: all .55s ease-in-out;
 
 }
 .project-img-wrapper:hover > .overlay {
