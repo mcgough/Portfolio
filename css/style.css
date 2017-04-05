@@ -26,7 +26,7 @@ li {
   -webkit-transition: all .5s ease-in-out;
   -moz-transition: all .5s ease-in-out;
   -o-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out; 
+  transition: all .5s ease-in-out;
 }
 .welcome.active {
   top: 0;
@@ -39,7 +39,7 @@ li {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  
+
   -webkit-align-items: center;
   -moz-align-items: center;
   -ms-align-items: center;
@@ -50,7 +50,7 @@ li {
   -webkit-justify-content: center;
   -moz-justify-content: center;
   -ms-justify-content: center;
-  -o-justify-content: center;  
+  -o-justify-content: center;
 }
 .welcome-container .copy {
   font-weight: 300;
@@ -77,7 +77,7 @@ li {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  
+
   -webkit-align-items: center;
   -moz-align-items: center;
   -ms-align-items: center;
@@ -90,11 +90,11 @@ li {
 }
 #myNavBar {
   opacity: .97;
-  
+
   -webkit-transition: opacity .3s ease-in-out;
   -moz-transition: opacity .3s ease-in-out;
   -o-transition: opacity .3s ease-in-out;
-  transition: opacity .3s ease-in-out;  
+  transition: opacity .3s ease-in-out;
 }
 #myNavBar.scrolling {
   opacity: .25;
@@ -116,7 +116,7 @@ li {
   -webkit-justify-content: center;
   -moz-justify-content: center;
   -ms-justify-content: center;
-  -o-justify-content: center;  
+  -o-justify-content: center;
 }
 .name-contact ul {
   margin: 0 0 0 15px;
@@ -172,7 +172,7 @@ li {
   padding-left: 7px;
 }
 .content-overlay {
-  position: absolute; 
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -193,12 +193,12 @@ small:before {
 }
 .intro-header {
   height: 100vh;
-  
+
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  
+
   -webkit-align-items: center;
   -moz-align-items: center;
   -ms-align-items: center;
@@ -210,7 +210,7 @@ small:before {
   background-attachment: fixed;
 }
 .intro-message h1 {
-  font-size: 8vh;  
+  font-size: 8vh;
 }
 .intro-message h3 {
   opacity: 1;
@@ -218,7 +218,7 @@ small:before {
   -webkit-transition: opacity .5s ease-in-out;
   -moz-transition: opacity .5s ease-in-out;
   -o-transition: opacity .5s ease-in-out;
-  transition: opacity .5s ease-in-out;  
+  transition: opacity .5s ease-in-out;
 }
 .intro-message h1, .intro-divider, .intro-social-buttons {
   opacity: 1;
@@ -335,7 +335,7 @@ small:before {
   -webkit-transition: all .35s ease-in-out;
   -moz-transition: all .35s ease-in-out;
   -o-transition: all .35s ease-in-out;
-  transition: all .35s ease-in-out;   
+  transition: all .35s ease-in-out;
 }
 .section-heading.skills {
   margin-bottom: 0;
@@ -371,6 +371,9 @@ small:before {
 }
 .section-heading-spacer {
   display: none;
+}
+.tech {
+  font-size: .7em;
 }
 .lead {
   font-size: 2.25vh;
@@ -420,8 +423,8 @@ small:before {
   transition: all .35s ease-in-out;
   -webkit-opacity: 0;
   -moz-opacity: 0;
-  -o-opacity: 0;  
-  opacity: 0;  
+  -o-opacity: 0;
+  opacity: 0;
   visibility: hidden;
 }
 .overlay h2 {
@@ -432,8 +435,8 @@ small:before {
   bottom: -10%;
   -webkit-opacity: 0;
   -moz-opacity: 0;
-  -o-opacity: 0;  
-  opacity: 0;  
+  -o-opacity: 0;
+  opacity: 0;
   -webkit-transition: all .55s ease-in-out;
   -moz-transition: all .55s ease-in-out;
   -o-transition: all .55s ease-in-out;
@@ -443,16 +446,16 @@ small:before {
 .project-img-wrapper:hover > .overlay {
   -webkit-opacity: .7;
   -moz-opacity: .7;
-  -o-opacity: .7;  
-  opacity: .7;  
+  -o-opacity: .7;
+  opacity: .7;
   visibility: visible;
 
 }
 .project-img-wrapper:hover > .overlay h2 {
   -webkit-opacity: 1;
   -moz-opacity: 1;
-  -o-opacity: 1;  
-  opacity: 1;  
+  -o-opacity: 1;
+  opacity: 1;
   bottom: 0;
 }
 .section-heading .github {
@@ -491,7 +494,7 @@ footer {
   -webkit-transition: opacity .5s ease-in-out;
   -moz-transition: opacity .5s ease-in-out;
   -o-transition: opacity .5s ease-in-out;
-  transition: opacity .5s ease-in-out;  
+  transition: opacity .5s ease-in-out;
   opacity: 1;
 }
 // .content-section-b a {
@@ -524,13 +527,13 @@ footer {
   -webkit-transition: all .35s ease-in-out;
   -moz-transition: all .35s ease-in-out;
   -o-transition: all .35s ease-in-out;
-  transition: all .35s ease-in-out;  
+  transition: all .35s ease-in-out;
 }
 .btn-default > i {
   -webkit-transition: all .35s ease-in-out;
   -moz-transition: all .35s ease-in-out;
   -o-transition: all .35s ease-in-out;
-  transition: all .35s ease-in-out;    
+  transition: all .35s ease-in-out;
 }
 .btn-default:hover {
   background: #fff;
@@ -550,7 +553,7 @@ footer {
   -webkit-transition: all .35s ease-in-out;
   -moz-transition: all .35s ease-in-out;
   -o-transition: all .35s ease-in-out;
-  transition: all .35s ease-in-out;   
+  transition: all .35s ease-in-out;
 }
 .navbar-default .navbar-brand:hover,.fa-fw:hover,.navbar-default .navbar-nav>li>a:hover {
   color: #aa9666;
@@ -681,7 +684,7 @@ footer {
     -webkit-transition: all .35s ease-in-out;
     -moz-transition: all .35s ease-in-out;
     -o-transition: all .35s ease-in-out;
-    transition: all .35s ease-in-out;  
+    transition: all .35s ease-in-out;
   }
   .navbar-toggle .icon-bar+.icon-bar {
     margin-top: 7px;
