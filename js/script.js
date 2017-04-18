@@ -94,7 +94,6 @@ $(function() {
 			triggerHook: 0
 		})
 		.setPin('#' + id)
-		.addIndicators()
 		.addTo(controller);
 	});
 
