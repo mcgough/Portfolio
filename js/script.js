@@ -77,7 +77,7 @@ function welcome () {
 	}
 }
 
-var opaque = 'opaque';
+// var opaque = 'opaque';
 
 $(function() {
 
@@ -97,30 +97,6 @@ $(function() {
 		.addTo(controller);
 	});
 
-	// var introHeader = new ScrollMagic.Scene({
-	// 	triggerElement: '.chevron',
-	// 	triggerHook: -100
-	// })
-	// .setClassToggle('.intro-header','active')
-	// .addIndicators()
-	// .addTo(controller);
-
-
-	// var aboutMe = new ScrollMagic.Scene({
-	// 	triggerElement: '#about',
-	// 	triggerHook: 0
-	// })
-	// .setPin('#about')
-	// .addIndicators()
-	// .addTo(controller);
-
-	// var skills = new ScrollMagic.Scene({
-	// 	triggerElement: '#skills',
-	// 	offset: -100
-	// })
-	// .setClassToggle('#skills','active')
-	// .addIndicators()
-	// .addTo(controller);
 
 	$(window).scroll(function() {
 
@@ -137,6 +113,15 @@ $(function() {
 			$navBar.removeClass('scrolling');
 		},1000);
 
+	});
+
+	$('nav .content-link a').click(function(e) {
+		e.preventDefault();
+		var id = $(this).attr('href');
+		// scrollEffect($(id).parent(),1000);
+		 $('html, body').animate({
+        scrollTop: $(id).parent().offset().top
+    }, 1000);
 	});
 
 
