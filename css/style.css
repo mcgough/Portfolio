@@ -195,8 +195,7 @@ small:before {
   top: 3.5px;
 }
 .intro-header {
-  height: 100vh;
-
+  padding: 0;
   background: url(../img/sunsetlarge.jpg) no-repeat center center;
   background-size: cover;
   // background-attachment: fixed;
@@ -541,6 +540,12 @@ footer {
   -webkit-transition: opacity .5s ease-in-out;
   transition: opacity .5s ease-in-out;
   opacity: 1;
+}
+#contact .container {
+  z-index: 25;
+}
+#contact canvas {
+  position: absolute;
 }
 // .content-section-b a {
 //   color: #00263e;
