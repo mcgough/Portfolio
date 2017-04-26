@@ -260,6 +260,7 @@ small:before {
 .chevron-container {
   position: absolute;
   left: 0;
+  bottom: 90px;
   width: 100%;
   -webkit-animation: arrow 1.5s infinite ease-in-out;
   animation: arrow 1.5s infinite ease-in-out;
@@ -621,37 +622,33 @@ footer {
   }
 }
 //Animations
+
 @-webkit-keyframes arrow {
   0% {
-    bottom: 80px;
+    -webkit-transform: translate(0,0);
+            transform: translate(0,0);
   }
   50% {
-    bottom: 100px;
+    -webkit-transform: translate(0,60%);
+            transform: translate(0,60%);
   }
   100% {
-    bottom: 80px;
-  }
-}
-@-webkit-keyframes arrow {
-  0% {
-    bottom: 80px;
-  }
-  50% {
-    bottom: 100px;
-  }
-  100% {
-    bottom: 80px;
+    -webkit-transform: translate(0,0);
+            transform: translate(0,0);
   }
 }
 @keyframes arrow {
   0% {
-    bottom: 80px;
+    -webkit-transform: translate(0,0);
+            transform: translate(0,0);
   }
   50% {
-    bottom: 100px;
+    -webkit-transform: translate(0,60%);
+            transform: translate(0,60%);
   }
   100% {
-    bottom: 80px;
+    -webkit-transform: translate(0,0);
+            transform: translate(0,0);
   }
 }
 
