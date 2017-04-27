@@ -81,7 +81,7 @@ function particlesInit (el) {
 	return particlesJS(el, {
 	  "particles": {
 	    "number": {
-	      "value": 125,
+	      "value": 110,
 	      "density": {
 	        "enable": true,
 	        "value_area": 800
@@ -136,10 +136,10 @@ function particlesInit (el) {
 	      "enable": true,
 	      "speed": 6,
 	      "direction": "none",
-	      "random": false,
+	      "random": true,
 	      "straight": false,
 	      "out_mode": "out",
-	      "bounce": false,
+	      "bounce": true,
 	      "attract": {
 	        "enable": false,
 	        "rotateX": 600,
